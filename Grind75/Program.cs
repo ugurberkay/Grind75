@@ -7,16 +7,13 @@ namespace Grind75
     {
         static void Main(string[] args)
         {
-            TreeNode s1 = new TreeNode(1,null,null);
-            TreeNode s2 = new TreeNode(3,null,null);
-            TreeNode s3 = new TreeNode(2,s1,s2);
-            TreeNode s4 = new TreeNode(6,null,null);
-            TreeNode s5 = new TreeNode(9,null,null);
-            TreeNode s6 = new TreeNode(7,s4,s5);
-            TreeNode root = new TreeNode(4,s3,s6);
+            string s1 = "anagram";
+            string t1 = "nagaram";
+            string s2 = "rat";
+            string t2 = "car";
 
-            InvertBinaryTree.InvertTreeQueue(root);
-            
+            Console.WriteLine(ValidAnagram.IsAnagram(s1,t1));
+            Console.WriteLine(ValidAnagram.IsAnagram(s2, t2));
         }
     }
 }
