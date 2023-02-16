@@ -11,7 +11,7 @@ namespace Grind75.Utility
         public int val;
         public TreeNode? left;
         public TreeNode? right;
-        public TreeNode(int val=0,TreeNode? left =null,TreeNode? right =null) 
+        public TreeNode(int val,TreeNode? left,TreeNode? right) 
         {
             this.val = val;
             this.left = left;
