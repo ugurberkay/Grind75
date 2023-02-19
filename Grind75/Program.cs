@@ -7,12 +7,24 @@ namespace Grind75
     {
         static void Main(string[] args)
         {
-            int[] nums = {-1,0,3,5,9,12 };
+            MyQueue queue = new MyQueue();
+            MyQueueWithOne newqueue=new MyQueueWithOne();
 
-            Console.WriteLine(BinarySearch.Search(nums, 9));
-           Console.WriteLine(BinarySearch.Search(nums, 2));
-            Console.WriteLine(BinarySearch.Search(nums, 0));
-            Console.WriteLine(BinarySearch.Search(nums, -1));
+            queue.Push(1);
+            queue.Push(2);
+            queue.Peek();
+            queue.Pop();
+            queue.Empty();
+
+
+            newqueue.Push(1);
+            newqueue.Push(2);
+            newqueue.Push(3);
+            newqueue.Push(4);
+            newqueue.Pop();
+            newqueue.Pop();
+            newqueue.Pop();
+            newqueue.Pop();
         }
     }
 }
