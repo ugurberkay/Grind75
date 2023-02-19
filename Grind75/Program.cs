@@ -7,13 +7,12 @@ namespace Grind75
     {
         static void Main(string[] args)
         {
-            string s1 = "anagram";
-            string t1 = "nagaram";
-            string s2 = "rat";
-            string t2 = "car";
+            int[] nums = {-1,0,3,5,9,12 };
 
-            Console.WriteLine(ValidAnagram.IsAnagram(s1,t1));
-            Console.WriteLine(ValidAnagram.IsAnagram(s2, t2));
+            Console.WriteLine(BinarySearch.Search(nums, 9));
+           Console.WriteLine(BinarySearch.Search(nums, 2));
+            Console.WriteLine(BinarySearch.Search(nums, 0));
+            Console.WriteLine(BinarySearch.Search(nums, -1));
         }
     }
 }
